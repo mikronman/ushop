@@ -1,0 +1,147 @@
+[28-Nov-2016 17:21:36 UTC] An Error occurred while handling another error:
+exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/ushopcrm/public_html/views/layouts/main.php' in /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/ushopcrm/...', Array, Object(app\controllers\SiteController))
+#1 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#2 /home/ushopcrm/public_html/vendor/yiisoft/yii2/web/ErrorAction.php(109): yii\base\Controller->render('error', Array)
+#3 [internal function]: yii\web\ErrorAction->run()
+#4 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Action.php(92): call_user_func_array(Array, Array)
+#5 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\Action->runWithParams(Array)
+#6 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('error', Array)
+#7 /home/ushopcrm/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(93): yii\base\Module->runAction('site/error')
+#8 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(109): yii\web\ErrorHandler->renderException(Object(yii\base\InvalidParamException))
+#9 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidParamException))
+#10 {main}
+Previous exception:
+exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /home/ushopcrm/public_html/views/layouts/main.php' in /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Controller.php(393): yii\base\View->renderFile('/home/ushopcrm/...', Array, Object(app\controllers\SiteController))
+#1 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#2 /home/ushopcrm/public_html/controllers/SiteController.php(68): yii\base\Controller->render('index')
+#3 [internal function]: app\controllers\SiteController->actionIndex()
+#4 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#7 /home/ushopcrm/public_html/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#8 /home/ushopcrm/public_html/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /home/ushopcrm/public_html/web/index.php(12): yii\base\Application->run()
+#10 {main}
+$_SERVER = [
+    'PATH' => '/sbin:/usr/sbin:/bin:/usr/bin',
+    'PWD' => '/usr/local/cpanel/cgi-sys',
+    'SHLVL' => '0',
+    'PHP_FCGI_MAX_REQUESTS' => '5000',
+    'SCRIPT_NAME' => '/web/index.php',
+    'REQUEST_URI' => '/web/index.php',
+    'QUERY_STRING' => '',
+    'REQUEST_METHOD' => 'GET',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'REMOTE_PORT' => '53821',
+    'SCRIPT_FILENAME' => '/home/ushopcrm/public_html/web/index.php',
+    'SERVER_ADMIN' => 'webmaster@ushopcrm.com',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ushopcrm/public_html',
+    'CONTEXT_PREFIX' => '',
+    'REQUEST_SCHEME' => 'http',
+    'DOCUMENT_ROOT' => '/home/ushopcrm/public_html',
+    'REMOTE_ADDR' => '64.140.208.80',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '107.180.44.133',
+    'SERVER_NAME' => 'ushopcrm.com',
+    'SERVER_SOFTWARE' => 'Apache/2.4.23',
+    'SERVER_SIGNATURE' => '',
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CONNECTION' => 'close',
+    'HTTP_COOKIE' => '_csrf=589071907acdca87c84dc0cebf2437380a5f8bdea0866c52fef440dceae75959a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_uKLxRi1qWzfvQJ1l3Ij07w3gNi87aKH%22%3B%7D; PHPSESSID=09130ec5ece5c9362edba153aeed0769; _identity=c61b5a1f77130d23eb9075df51b66bfc57b7ae7e92411f7d11cb1d7bdb2d0396a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D',
+    'HTTP_REFERER' => 'http://ushopcrm.com/web/index.php?r=site%2Flogin',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+    'HTTP_HOST' => 'ushopcrm.com',
+    'UNIQUE_ID' => 'WDxnoMZH5yYADxyR1zkAAADF',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1480353696.55652904510498046875,
+    'REQUEST_TIME' => 1480353696,
+    'argv' => [],
+    'argc' => 0,
+]
+[10-Dec-2016 00:30:23 UTC] PHP Fatal error:  Class 'JMS\Serializer\Annotation\Type' not found in /home/ushopcrm/public_html/web/lib/net/authorize/util/SensitiveDataConfigType.php on line 6
+[10-Dec-2016 01:15:53 UTC] PHP Fatal error:  Class 'JMS\Serializer\Annotation\Type' not found in /home/ushopcrm/public_html/web/lib/net/authorize/util/SensitiveDataConfigType.php on line 6
+[10-Dec-2016 01:35:27 UTC] PHP Fatal error:  Class 'JMS\Serializer\Annotation\Type' not found in /home/ushopcrm/public_html/web/lib/net/authorize/util/SensitiveDataConfigType.php on line 6
+[10-Dec-2016 01:35:42 UTC] PHP Fatal error:  Class 'JMS\Serializer\Annotation\Type' not found in /home/ushopcrm/public_html/web/lib/net/authorize/util/SensitiveDataConfigType.php on line 6
+[10-Dec-2016 01:46:29 UTC] PHP Fatal error:  Class 'JMS\Serializer\Annotation\Type' not found in /home/ushopcrm/public_html/web/lib/net/authorize/util/SensitiveDataConfigType.php on line 6
+[10-Dec-2016 03:21:38 UTC] PHP Fatal error:  Class 'JMS\Serializer\Annotation\Type' not found in /home/ushopcrm/public_html/web/lib/net/authorize/util/SensitiveDataConfigType.php on line 6
+[10-Dec-2016 14:59:17 UTC] PHP Fatal error:  Class 'JMS\Serializer\Annotation\Type' not found in /home/ushopcrm/public_html/web/lib/net/authorize/util/SensitiveDataConfigType.php on line 6
+[12-Dec-2016 04:49:36 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 44
+[12-Dec-2016 04:54:51 UTC] PHP Fatal error:  Class 'models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 44
+[12-Dec-2016 05:37:53 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[12-Dec-2016 05:43:34 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[12-Dec-2016 05:47:28 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[12-Dec-2016 07:02:36 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[12-Dec-2016 07:15:04 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[12-Dec-2016 07:15:07 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 7
+[12-Dec-2016 07:15:19 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 7
+[12-Dec-2016 07:38:05 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 9
+[12-Dec-2016 07:38:12 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 9
+[12-Dec-2016 07:43:31 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 12
+[12-Dec-2016 14:50:34 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[12-Dec-2016 14:52:21 UTC] PHP Fatal error:  Class 'app\models\CustomersSearch' not found in /home/ushopcrm/public_html/controllers/CustomersController.php on line 38
+[12-Dec-2016 14:53:00 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[12-Dec-2016 15:06:53 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[13-Dec-2016 00:58:19 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 12
+[13-Dec-2016 01:05:01 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 12
+[13-Dec-2016 01:24:12 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 12
+[13-Dec-2016 01:29:44 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 12
+[13-Dec-2016 01:33:18 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 51
+[13-Dec-2016 01:36:26 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 12
+[13-Dec-2016 01:37:25 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 12
+[13-Dec-2016 01:39:29 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 12
+[13-Dec-2016 01:43:10 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 13
+[13-Dec-2016 01:49:57 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 13
+[13-Dec-2016 02:19:02 UTC] PHP Fatal error:  Class 'net\authorize\api\contract\v1\MerchantAuthenticationType' not found in /home/ushopcrm/public_html/views/orders/create.php on line 47
+[13-Dec-2016 02:30:23 UTC] PHP Fatal error:  Class 'net\authorize\api\contract\v1\MerchantAuthenticationType' not found in /home/ushopcrm/public_html/views/orders/create.php on line 47
+[13-Dec-2016 02:32:19 UTC] PHP Fatal error:  Class 'net\authorize\api\contract\v1\MerchantAuthenticationType' not found in /home/ushopcrm/public_html/views/orders/create.php on line 47
+[13-Dec-2016 02:32:24 UTC] PHP Fatal error:  Class 'net\authorize\api\contract\v1\MerchantAuthenticationType' not found in /home/ushopcrm/public_html/views/orders/create.php on line 47
+[13-Dec-2016 02:32:35 UTC] PHP Fatal error:  Class 'net\authorize\api\contract\v1\MerchantAuthenticationType' not found in /home/ushopcrm/public_html/views/orders/create.php on line 47
+[13-Dec-2016 02:32:39 UTC] PHP Fatal error:  Class 'net\authorize\api\contract\v1\MerchantAuthenticationType' not found in /home/ushopcrm/public_html/views/orders/create.php on line 47
+[13-Dec-2016 02:36:03 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 13
+[13-Dec-2016 02:41:10 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test2.php on line 13
+[13-Dec-2016 03:49:18 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 75
+[13-Dec-2016 14:04:57 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 75
+[13-Dec-2016 14:15:12 UTC] PHP Fatal error:  Class 'app\models\Orders' not found in /home/ushopcrm/public_html/web/test.php on line 75
+[22-Jan-2017 10:16:26 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:17:12 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:17:57 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:18:50 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:19:24 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:26:22 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:28:15 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:28:38 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:29:38 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:32:09 UTC] PHP Fatal error:  Class 'app\controllers\Transactionssss' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:32:31 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:33:13 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:35:35 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:35:37 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:48:34 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:48:37 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:49:02 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:49:09 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:51:39 UTC] PHP Fatal error:  Class 'controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:52:04 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 10:53:31 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 11
+[22-Jan-2017 10:53:32 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 11
+[22-Jan-2017 10:54:09 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 18:54:20 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 18:54:27 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 10
+[22-Jan-2017 18:58:08 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 14
+[22-Jan-2017 18:58:20 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 14
+[22-Jan-2017 18:58:24 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 14
+[22-Jan-2017 18:58:49 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 14
+[22-Jan-2017 18:59:52 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 14
+[22-Jan-2017 19:00:21 UTC] PHP Fatal error:  Class 'app\controllers\Transactions' not found in /home/ushopcrm/public_html/web/test.php on line 14
+[23-Mar-2017 17:21:42 UTC] PHP Fatal error:  Class 'app\models\CustomersSearch' not found in /home/ushopcrm/public_html/controllers/CustomersController.php on line 38
+[25-Mar-2017 06:39:33 UTC] PHP Fatal error:  Class 'app\models\GatewayProviders' not found in /home/ushopcrm/public_html/views/campaigns/_form.php on line 23

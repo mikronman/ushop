@@ -1,0 +1,36 @@
+<?php
+
+/* @var $this yii\web\View */
+use yii\helpers\Html;
+use yii\helpers\Url;
+
+$this->title = 'uShop CRM';
+?>
+<div class="site-index">
+
+    <div class="body-content">
+		<div class="w100 left pa25">
+			<div class="new-product left w33 tcenter pa10">
+				<div class="w100 left pa25 bgc1 r10">
+					<?= Html::img('@web/img/prod_icon.png', ['alt'=>'products', 'class'=>'']);?>
+					<h1>Your Products</h1>
+					<a style="max-width:250px;" class="center btn main-btn" href="<?= url::to(['products/create'])?>">Add a Product</a>
+				</div>
+			</div>
+			<div class="new-product left w33 tcenter pa10">
+				<div class="w100 left pa25 bgc1 r10">
+					<?= Html::img('@web/img/camp_icon.png', ['alt'=>'campaigns', 'class'=>'']);?>
+					<h1>Your Campaigns</h1>
+					<a style="max-width:250px;" class="center btn main-btn" href="<?= url::to(['campaigns/create'])?>">Add a Campaign</a>
+				</div>
+			</div>
+			<div class="new-product left w33 tcenter pa10">
+				<div class="w100 left pa25 bgc1 r10">
+					<?= Html::img('@web/img/rprt_icon.png', ['alt'=>'Reports', 'class'=>'']);?>
+					<h1>Your Reports</h1>
+					In Development
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
