@@ -216,6 +216,12 @@ AppAsset::register($this);
                     <li><a href="<?= url::to(['customers/index'])?>">Manage Customers</a></li>
                 </ul>
             </li>
+            <li class="has-children comments">
+                <a href="#0">Gateway</a>
+                <ul>
+                    <li><a href="<?= url::to(['gateway/select'])?>">Select Gateway</a> </li>
+                </ul>
+            </li>
 			<!--
             <li class="has-children images">
                 <a href="#0">Email Campaigns</a>

@@ -92,6 +92,36 @@ class OrdersController extends Controller
 
     }
 
+    public function sendOtherGatewayOrders($data)
+    {
+
+            Yii::$app->db->createCommand()
+                          ->insert('orders',
+                              [
+                               'amount_paid' => $data["Orders"]{'amount_paid'},
+                               'product_id' => $data["Orders"]{'product_id'},
+                               'product_name' => $data["Orders"]{'product_name'},
+                               'quantity' => $data["Orders"]{'quantity'},
+                               'billing_cycle' => $data["Orders"]{'billing_cycle'},
+                               'campaign_id' => $data["Orders"]{'campaign_id'},
+                               'first_name' => $data['first_name'],
+                               'last_name' => $data['last_name'],
+                               'address' => $data['address'],
+                               'address2' => $data['address2'],
+                               'city' => $data['city'],
+                               'state' => $data['Orders']{'state'},
+                               'zip' => $data['zip'],
+                               'country' => $data['Orders']{'country'},
+                               'phone' => $data['phone'],
+                               'cc_last_four' => substr($data['billing-cc-number'], -4),
+                               'payment_gateway_id' => $data['payment_gateway_id'],
+                               'transaction_id' => $data['transaction-id']
+                          ])
+                          ->execute();
+           return $this->redirect(['index']);
+
+    }
+
     /**
      * Updates an existing Orders model.
      * If update is successful, the browser will be redirected to the 'view' page.

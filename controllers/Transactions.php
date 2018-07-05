@@ -248,7 +248,7 @@ class Transactions extends Controller
                     }
                     if(!$externalOrder)
                     {
-                        var_dump($x["attributes"]["id"]);
+                        //var_dump($x["attributes"]["id"]);
                         $stmt = $db->prepare("Update orders set transaction_id = :transid Where id = :id");
                         $stmt->bindValue(":transid", $tresponse->getTransId());
                         $stmt->bindValue(":id", $x["attributes"]["id"]);

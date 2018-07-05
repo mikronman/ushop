@@ -48,6 +48,8 @@ use Yii;
  */
 class Orders extends \yii\db\ActiveRecord
 {
+    public $first_name = false;
+    public $last_name = false;
     /**
      * @inheritdoc
      */
