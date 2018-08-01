@@ -2,44 +2,68 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use yii\widgets\Pjax;
+
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\OrdersSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Your Orders';
+$this->title = 'Orders';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="orders-index index-wrap">
-	<?php if(!empty($_GET['id'])): ?>
-        <div class="success-message">Order ID <?php echo $_GET['id'] ?> has been successfully created!</div>
-    <?php endif; ?>
-    <div class="w100 left mb15">
-        <div class="left">
-			<h1 class=""><?= Html::encode($this->title) ?></h1>
-			<p>You can manage your existing orders here.</p>
-        </div>
-        <div class="mt15 right">
-			<?= Html::a('Place a New Order', ['create'], ['class' => 'btn']) ?>
-		</div>
-    </div>
-    <div class="w100 left">
-        <?php Pjax::begin(); ?>
-        <?= GridView::widget([
-            'dataProvider' => $dataProvider,
-            'filterModel' => $searchModel,
-            'columns' => [
-                //['class' => 'yii\grid\SerialColumn'],
-                'id',
-                'first_name',
-                'last_name',
-                'address',
-                'city',
-                'state',
+<div class="orders-index">
 
-                ['class' => 'yii\grid\ActionColumn'],
-            ],
-        ]); ?>
-        <?php Pjax::end(); ?>
-    </div>
+    <h1><?= Html::encode($this->title) ?></h1>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
+    <p>
+        <?= Html::a('Create Orders', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => [
+            ['class' => 'yii\grid\SerialColumn'],
+
+            'order_id',
+            'id',
+            'campaign_id',
+            'campaign_name',
+            'transaction_id',
+            // 'product_id',
+            // 'subscription',
+            // 'quantity',
+            // 'product_name',
+            // 'amount_paid',
+            // 'upsell_id',
+            // 'tracking_number',
+            // 'shipping_status',
+            // 'shipping_method',
+            // 'payment_type',
+            // 'status',
+            // 'cc_last_four',
+            // 'customer_id',
+            // 'payment_gateway_id',
+            // 'first_name',
+            // 'last_name',
+            // 'email:email',
+            // 'address',
+            // 'address2',
+            // 'city',
+            // 'state',
+            // 'zip',
+            // 'country',
+            // 'ip',
+            // 'aff_id',
+            // 'sub_aff_id',
+            // 'confirm_status',
+            // 'rma',
+            // 'billing_cycle',
+            // 'routing_number',
+            // 'order_date',
+            // 'next_r_date',
+            // 'next_r_product',
+
+            ['class' => 'yii\grid\ActionColumn'],
+        ],
+    ]); ?>
 </div>

@@ -54,7 +54,7 @@ class Customers extends \yii\db\ActiveRecord
             'first_name' => 'First Name',
             'last_name' => 'Last Name',
             'address' => 'Address',
-            'address2' => 'Address 2',
+            'address2' => 'Suite / Apt',
             'city' => 'City',
             'state' => 'State',
             'zip' => 'Zip',

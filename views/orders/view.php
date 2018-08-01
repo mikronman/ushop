@@ -1,10 +1,7 @@
 <?php
-require 'autoload.php';
-require '../vendor/autoload.php';
+
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use net\authorize\api\contract\v1 as AnetAPI;
-use net\authorize\api\controller as AnetController;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Orders */
@@ -69,33 +66,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'order_date',
             'next_r_date',
             'next_r_product',
-            'refund_amount'
         ],
-    ]);
-
-//var_dump( $model['attributes']['status'] );
-//var_dump($transactionResponse);
-/*if( $model['attributes']['status'] == "cancel" )
-{
-    $transactionid = $model['attributes']['transaction_id'];
-
-    $cancelTransaction = new app\controllers\Transactions();
-    $cancelTransaction = $cancelTransaction->voidTransaction($transactionid);
-
-    //voidTransaction( $transactionid );
-}
-    if( $model['attributes']['status'] == "refund" )
-    {
-        $refundTransaction = new app\controllers\Transactions();
-        $refundTransaction = $refundTransaction->refundTransaction( $model['attributes']['refund_amount'] );
-
-    }
-    if( $model['attributes']['status'] != "refund" || $model['attributes']['status'] != "cancel")
-    {
-        $processOrder = new app\controllers\Transactions();
-        $processOrder = $processOrder->processOrder($model,$externalOrder = false);
-
-    } */
-    ?>
+    ]) ?>
 
 </div>

@@ -1183,6 +1183,12 @@ h2
 	color:#666666;
 	
 }
+.title-wrap{
+	width:100%;
+	float:left;
+	padding:5px;
+	margin-bottom:15px;
+}
 .dash-intro-wrap .dash-intro-item img
 {
 	width:150px;

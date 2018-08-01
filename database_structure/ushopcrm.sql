@@ -1769,8 +1769,8 @@ CREATE TABLE IF NOT EXISTS `user_accounts` (
 
 -- --------------------------------------------------------
 --
---Table Structure for user
---AL 
+-- Table Structure for user
+-- AL 
 --
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="products-create index-wrap">
 
-    <div class="w100 left pa5 mb15">
+    <div class="title-wrap">
         <h1 class=""><?= Html::encode($this->title) ?></h1>
         <br/>
         <p>Once you add a new product, it will be available to use for your campaigns.</p>
